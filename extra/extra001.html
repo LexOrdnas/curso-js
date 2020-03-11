@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio Extra - Operações</title>
+    <style>
+        body {
+            background-color: rgba(0, 128, 128, 0.39);
+            color: tomato;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operações</h1>
+
+    <script>
+        var name = window.prompt('Olá! Como se chama?')
+        
+        window.alert(`Sr(a) ${name}, você irá inserir dois numeros que serão parte do calculo das operações aritméticas, no entanto um terceiro numero será adicionado ao calculo de cada operação ex.: (5 + 3 + x), sua tarefa será descobrir com base na observação dos resultados qual é o valor desconhecido, boa sorte!`)
+        
+        var n1 = Number(window.prompt(`Para efetuar os calculos preciso que insira um valor: `))
+        var n2 = Number(window.prompt(`Muito bem! agora insira outro numero: `))
+        
+        var x = n1 - n2 
+
+        var ad = n1 + n2 + x
+        var su = n1 - n2 - x
+        var mu = n1 * n2 * x
+        var dir = n1 / n2 / x
+        var rdi = n1 % n2 % x
+        var po = n1 ** n2 ** x
+
+        document.write(`A adição entre "${n1} + ${n2} + x" é ${ad} </br>`)
+        document.write(`A subtração entre "${n1} - ${n2} - x" é ${su} </br>`)
+        document.write(`A multiplicação entre "${n1} * ${n2} * x" é ${mu} </br>`)
+        document.write(`A divisão real entre "${n1} / ${n2} / x" é ${dir} </br>`)
+        document.write(`O resto da divisão inteira entre "${n1} % ${n2} % x" é ${rdi} </br>`)
+        document.write(`A potenciação entre "${n1} ** ${n2} ** x" é ${po} </br></br>`)
+
+        document.write(`Eae descobriu o valor de x? Observe os padrões!`)
+        document.write(`Alias, x não é um valor unico se você atualizar a pagina e tentar outro numero verá que o valor mudará, então que tal pensar em qual expressão numerica faria tais resultados?`)
+        document.write(`Muito Obrigado !`)
+    </script>
+</body>
+</html>

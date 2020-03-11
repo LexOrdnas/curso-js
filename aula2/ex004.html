@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 4</title>
+    <style>
+        body {
+            font: normal 20pt Helvetica;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letas!<br/>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}</br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+
+        // NODE.JS
+        // n1.toFixed(3).replace('.',',') --> O numero de casas do numero float será 3, o ponto será trocado pela virgula.
+        // n1.toLocaleString('pt-BR', {style: ' currency', currency: 'BRL'}) --> R$ x,xxx.xx
+    </script>
+</body>
+</html>

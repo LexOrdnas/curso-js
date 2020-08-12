@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu país?</title>
+</head>
+<body>
+    <h1>Qual seu país?</h1>
+    Nome do país: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function verificar(){
+            var txtdp = document.querySelector('input#txtp')
+            var res = document.querySelector('div#res')
+            var pais = (txtp.value)
+            res.innerHTML = `<p>Vivendo em ${pais}</p>`
+            if (pais == 'Brasil') {
+                res.innerHTML = '<p><strong>Brasileiro</strong>, também conhecido como Futebol, Samba e Bunda !</p>'
+            } else {
+                res.innerHTML = '<p><strong>Estrangeiro</strong> ! Mate-o!!!</p>'
+            }
+        }
+
+    </script>
+</body>
+</html>

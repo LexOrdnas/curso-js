@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background-color: rgb(113, 181, 226);
+            color: white;
+            font: normal 12pt Helvetica;
+        }
+    </style>
+</head>
+<body>
+    <!-- Crtl + Shift + p = Digite What in Chrome-->
+    <h1>Iniciando estudos com DOM</h1><hr/>
+    <p>Aqui vai o resultado</p>
+    <p>DOM - <strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel</p>
+    <!--
+        Árvore DOM
+
+        Window = location + document + history
+
+        document = html
+
+        html = head + body
+    -->
+    <div id="msg">Clique em mim</div><br/>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        /*window.document.write('Está escrito assim: ' + p1.innerText)
+        corpo.style.background = 'black'
+        p1.style.color = 'red'
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        window.document.getElementById('msg').innerText = 'Olá!'
+        */
+
+       // id = # | classe = .
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+    </script>
+</body>
+</html>
